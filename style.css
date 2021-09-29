@@ -1,0 +1,30 @@
+.jumbotron {
+    background-image: url(/img/slide1.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+}
+.banner {
+    height: 30px;
+}
+.container {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+}
+.my-nav {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 45px;
+    background: none !important;
+}
+.container-fluid .img {
+    height: 10px;
+}
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+}
