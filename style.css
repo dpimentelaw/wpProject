@@ -1,3 +1,6 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 .jumbotron1 {
     background-image: url(/img/slide1.jpg);
     height: 1000px;
@@ -13,9 +16,7 @@
     font-family: 'Shadows Into Light', cursive;
     font-size: 45px !important;
     background: none !important;
-}
-.my-nav.scrolled {
-    background-color: black !important;
+    margin-top: 3rem;
 }    
 
 .navbar {
@@ -58,4 +59,26 @@ p {
         width: 85%;
         transition: width .3s;
     }
+}
+/* Change background color & Fix to Top */
+.my-navbg {
+    position: fixed;
+    top:0;
+    background-color:black !important;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 45px !important;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+body {
+    animation: fadein 400ms;
+}
+@keyframes fadein {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity:1;
+        }
 }
