@@ -11,8 +11,16 @@
 }
 .my-nav {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 45px;
+    font-size: 45px !important;
     background: none !important;
+}
+.my-nav.scrolled {
+    background-color: black !important;
+}    
+
+.navbar {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
 }
 .pitbull {
     font-family: 'Shadows Into Light', cursive;
@@ -36,4 +44,18 @@ p {
     display: flex;
     align-items: center;
     justify-content:center;
+}
+@media screen and (min-width: 960px) {
+    .nav-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width .3s;
+    }
+    .nav-link:hover::after {
+        width: 85%;
+        transition: width .3s;
+    }
 }
