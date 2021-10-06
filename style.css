@@ -46,7 +46,8 @@ p {
     align-items: center;
     justify-content:center;
 }
-@media screen and (min-width: 960px) {
+/* Hover over nav link animation */
+@media screen and (min-width: 650px) {
     .nav-link::after {
         content: '';
         display: block;
@@ -60,6 +61,16 @@ p {
         transition: width .3s;
     }
 }
+@media screen and (max-width: 700px) {
+    .pitty {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    .pitbull {
+        font-size: 70px;
+    }
+}
 /* Change background color & Fix to Top */
 .my-navbg {
     position: fixed;
@@ -69,6 +80,7 @@ p {
     font-size: 45px !important;
     opacity: 0.9;
     transition: 0.4s;
+    color:white !important;
 }
 body {
     animation: fadein 400ms;
@@ -82,7 +94,7 @@ body {
           opacity:1;
         }
 }
-.d-flex a {
+.shelter a {
     text-decoration: none;
     color: black;
 }
